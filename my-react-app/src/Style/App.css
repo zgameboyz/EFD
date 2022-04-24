@@ -1,0 +1,19 @@
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.8fr 1fr 6fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+#item1{
+  grid-area: 1/1/2/5;
+}
+#item3{
+  grid-area: 3/3/5/5;
+}
