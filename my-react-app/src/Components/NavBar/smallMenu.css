@@ -1,0 +1,10 @@
+#smallMenuButton{
+  background-color: none;
+  background-image: url(./smallMenuIcon.svg);
+  background-repeat: no-repeat;
+  box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.373);
+  border-radius: 50%;
+}
+#smallMenuButton:hover{
+  box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.373);
+}

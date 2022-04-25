@@ -1,108 +1,144 @@
 #siteHeader{
   width: 100%;
+  height: 100%;
   text-align: center;
-  background-color: aquamarine;
-  border: solid 1px black;
+  background-color: #D3EDEA;
 }
-
-
-#elmaFamilyDentalTitleText{
-  font-size: 3em;
-  font-family: 'Libre Bodoni', serif;
-  padding-top: 25px;
+#smallMenuContainer{
+  display: none;
 }
 
 #dropdownContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  margin-top: auto;
+  margin-bottom: auto;
   padding-top: 20px;
-  
+  padding-bottom: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 
 #homeButton{
-  background-color: white;
-  color: aqua;
+  background-color: #D3EDEA;
+  color: #09333F;
   border: none;
-  width: auto;
-  font-size: 1.5em;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.75em;
   border-radius:0;
- 
+  outline: none !important;
+  grid-column: 2;
+  margin-top: 5vh; 
+  padding: 5px;
+  box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.373); 
 }
 
 #homeButton:hover{
-  background-color: black;
-  color: greenyellow;
-  border: none;
-  width: auto;
-  font-size: 1.5em;
-  border-radius:0;
+  box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.373);
+}
+
+#homeButton:focus{
+  box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.373);
+}
+#generalDropdownComponent{
+  grid-column: 4;
+  margin-top: 5vh; 
 }
 
 #generalDropdown{
-  background-color: white;
-  color: aqua;
+  background-color: #D3EDEA;
+  color: #09333F;
   border: none;
   width: auto;
-  font-size: 1.5em;
+  font-size: 1.75em;
   border-radius:0;
-
+  padding: 5px;
+  box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.373);
+  outline: none !important;
 }
 #generalDropdown:hover{
-  background-color: black;
-  color: greenyellow;
-  border: none;
-  width: auto;
-  font-size: 1.5em;
-  border-radius:0;
-  
+  box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.373);
 }
-
+.dropdown-custom{
+  background: #D3EDEA;
+}
+#aboutusDropdownComponent{
+  grid-column: 6;
+  margin-top: 5vh; 
+  outline: none !important;
+}
 #aboutusDropdown{
-  background-color: white;
-  color: aqua;
+  background-color: #D3EDEA;
+  color: #09333F;
   border: none;
   width: auto;
-  font-size: 1.5em;
+  font-size: 1.75em;
   border-radius:0;
-
+  padding: 5px;
+  grid-column: 6;
+  box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.373);
 }
 #aboutusDropdown:hover{
-  background-color: black;
-  color: greenyellow;
-  border: none;
-  width: auto;
-  font-size: 1.5em;
-  border-radius:0;
-  
+  box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.373);
+}
+
+#servicesDropdownComponent{
+  grid-column: 8;
+  margin-top: 5vh; 
+  outline: none !important;
 }
 
 #servicesDropdown{
-  background-color: white;
-  color: aqua;
+  background-color: #D3EDEA;
+  color: #09333F;
   border: none;
   width: auto;
-  font-size: 1.5em;
+  font-size: 1.75em;
   border-radius:0;
-  
+  padding: 5px;
+  grid-column: 8;
+  box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.373);
 }
 #servicesDropdown:hover{
-  background-color: black;
-  color: greenyellow;
-  border: none;
-  width: auto;
-  font-size: 1.5em;
-  border-radius:0;
+  box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.373);
+}
+
+@media only screen and (max-width: 750px) {
+  #dropdownContainer > *{
+    font-size: 1em;
+  }
+  #generalDropdown{
+    font-size: 1em;
+  }
+  #aboutusDropdown{
+    font-size: 1em;
+  }
+  #servicesDropdown{
+    font-size: 1em;
+  }
   
 }
 
-#theDivide{
-  width: 100%;
-  height: 10vh;
-  background-color:white;
-  color: black;
-  margin-top: 5px;
-  text-align: center;
+@media only screen and (max-width: 749px) {
+  #dropdownContainer > *{
+    display: none;
+  }
+  #generalDropdown{
+    display: none;
+  }
+  #aboutusDropdown{
+    display: none;
+  }
+  #servicesDropdown{
+    display: none;
+  }
+  
+  #smallMenuContainer{
+    display:block;
+    grid-column: 2;
+  }
 }
-
