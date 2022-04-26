@@ -3,22 +3,46 @@
 #grid {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: 0.25fr 1fr 1fr 1.5fr 1fr;
+  grid-template-rows: 0.1fr .5fr 1fr 1.5fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: #D3EDEA;
   height: 100%;
   width: 100%;
   }
-
-#item1{
+  
+#nav{
   grid-area: 1/1/2/12;
-  background-color: #D3EDEA;
+  background-color: #09333F;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-#item2{
-  grid-area: 2/1/3/12;
+#menu{
+  grid-area: 2/3/3/10;
+  margin-top: 5vh;
 }
 
-#item3{
+#parralax{
+  grid-area: 3/1/4/12;
+  background-color: white;
+
+ 
+    /* The image used */
+    background-image: url("../Style/parralaxPic.png");
+  
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#carousel{
   grid-area: 5/4/5/7;
 }
