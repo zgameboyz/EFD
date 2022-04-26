@@ -15,6 +15,7 @@ class Nav extends React.Component {
             <div id="smallMenuContainer">
               <Menu id="smallMenu" />
             </div>
+            <div id="navText"></div>
             <Button id="homeButton" variant="custom">
               Home
             </Button>
